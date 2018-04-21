@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DocRepository_Anjaneya</string>
+
+    <!-- Error Messages -->
+    <string name="bad_request">The request was invalid or cannot be otherwise served. An accompanying error message will explain further. In API v1.1, requests without authentication are considered invalid and will yield this response.</string>
+    <string name="Unauthorized">Authentication credentials were missing or incorrect.</string>
+    <string name="Forbidden">The request is understood, but it has been refused or access is not allowed.</string>
+    <string name="not_found">The URI requested is invalid or the resource requested, such as a user, does not exists.</string>
+    <string name="Internal_Server_Error">Something is broken</string>
+    <string name="Bad_Gateway">TheRiceBag is down or being upgraded.</string>
+    <string name="deafult_error">Something went wrong.</string>
+    <string name="No_Network">No Network.</string>
+
+    <!-- UI -->
+    <string name="view">View</string>
+    <string name="search">Search</string>
+    <string name="fab_message_cate">Functionality not enabled</string>
+    <string name="fab_message">Document uploads not allowed for this user</string>
+    <string name="progress_message">Loading Data ....</string>
+    <string name="downloading_progress">Downloading ....</string>
+    <string name="open_file">No handler for this type of file</string>
+    <string name="error_string">Something went wrong. Please try again later</string>
+    <string name="network_toast">Please check your Internet connection</string>
+    <string name="file_provider_authority" translatable="false">apnacomplex.docrepository_anjaneya.fileprovider</string>
+</resources>

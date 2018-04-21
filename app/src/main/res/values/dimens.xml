@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tx_size_home">40px</dimen>
+    <dimen name="tx_size_cat_name">48px</dimen>
+    <dimen name="tx_size_cat_count">34px</dimen>
+    <dimen name="tx_size_files">40px</dimen>
+    <dimen name="tx_size_file_name">48px</dimen>
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="apnacomplex.docrepository_anjaneya.activity.HomeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/doc_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doc_list_toolbar"
+        android:focusableInTouchMode="true"
+        card_view:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/linearCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp">
+
+            <apnacomplex.docrepository_anjaneya.views.TextView_RobotoRegular
+                android:id="@+id/txtCatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Files"
+                android:textSize="@dimen/tx_size_files" />
+
+            <RelativeLayout
+                android:id="@+id/relativeSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/imgSort"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/txtNumDocs"
+                    android:layout_alignTop="@+id/txtNumDocs"
+                    android:src="@drawable/sort_ic" />
+
+                <apnacomplex.docrepository_anjaneya.views.TextView_RobotoRegular
+                    android:id="@+id/txtNumDocs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/imgSort"
+                    android:text="Name"
+                    android:textSize="@dimen/tx_size_files" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDocList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add_white_24dp" />
+
+
+</RelativeLayout>

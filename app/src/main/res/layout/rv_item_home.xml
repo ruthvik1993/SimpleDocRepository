@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardElevation="3dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearhomeItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgRep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <apnacomplex.docrepository_anjaneya.views.TextView_RobotoRegular
+                android:id="@+id/txtRep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tx_size_home" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
